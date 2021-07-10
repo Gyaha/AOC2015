@@ -1,5 +1,3 @@
-
-
 def find_floor(s: str) -> int:
     floor = 0
     for l in s:
@@ -24,7 +22,7 @@ def find_basement(s: str) -> int:
     return position
 
 
-with open("input01.txt") as file:
-    data = file.readline()
+with open("input01") as file:
+    data = file.read()
     print(find_floor(data))
     print(find_basement(data))
