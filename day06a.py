@@ -26,14 +26,12 @@ def light_instruction(m: list, l: str):
 
 
 def light_turn(m: list, on: bool, sx, sy, ex, ey):
-    print(on, sx, sy, ex, ey)
     for y in range(sy - 1, ey):
         for x in range(sx - 1, ex):
             m[y][x] = on
 
 
 def light_toggle(m: list, sx, sy, ex, ey):
-    print(sx, sy, ex, ey)
     for y in range(sy - 1, ey):
         for x in range(sx - 1, ex):
             m[y][x] = not m[y][x]
